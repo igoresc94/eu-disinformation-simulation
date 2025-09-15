@@ -1,0 +1,25 @@
+{
+  "scripts": {
+    "start": "node ./dev/server.js",
+    "format": "./node_modules/.bin/prettier --write --no-semi --tab-width 4 --single-quote \"{,!(node_modules|deps)/**/}*.js\"",
+    "build": "react-scripts build"
+  },
+  "name": "eu-disinformation-simulation",
+  "version": "4.2.7",
+  "main": "app/app.js",
+  "homepage": "https://igoresc94.github.io/eu-disinformation-simulation",
+  "directories": {
+    "doc": "docs"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^5.1.0",
+    "mysql2": "^3.14.5"
+  },
+  "devDependencies": {
+    "prettier": "^2.5.1"
+  }
+}
