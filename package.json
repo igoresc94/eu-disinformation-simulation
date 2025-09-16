@@ -1,15 +1,17 @@
 {
-  "scripts": {
-    "start": "node ./dev/server.js",
-    "format": "./node_modules/.bin/prettier --write --no-semi --tab-width 4 --single-quote \"{,!(node_modules|deps)/**/}*.js\"",
-    "build": "react-scripts build"
-  },
   "name": "eu-disinformation-simulation",
   "version": "4.2.7",
   "main": "app/app.js",
-  "homepage": "https://igoresc94.github.io/eu-disinformation-simulation",
+  "homepage": "https://igoresc94.github.io/",
   "directories": {
     "doc": "docs"
+  },
+  "scripts": {
+    "start": "node ./dev/server.js",
+    "format": "./node_modules/.bin/prettier --write --no-semi --tab-width 4 --single-quote \"{,!(node_modules|deps)/**/}*.js\"",
+    "build": "react-scripts build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "author": "",
   "license": "ISC",
@@ -17,9 +19,12 @@
   "dependencies": {
     "cors": "^2.8.5",
     "express": "^5.1.0",
-    "mysql2": "^3.14.5"
+    "gh-pages": "^6.3.0",
+    "mysql2": "^3.14.5",
+    "react-scripts": "^5.0.1"
   },
   "devDependencies": {
+    "gh-pages": "^4.0.0",
     "prettier": "^2.5.1"
   }
 }
